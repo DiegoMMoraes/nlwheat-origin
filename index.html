@@ -21,16 +21,16 @@
                 <span>
                     <img src="./images/seloRockeatseat.svg" alt="Selo Rocketseat">
                 </span>
-                <img src="./images/profile.png" alt="Foto de perfil">
+                <img id="profileImg" src="http://lorempixel.com/185/185/people/" alt="Foto de perfil">
             </div>
             
             <div class="name">
-                <h1 id="userName">Diego Moraes</h1>
+                <h1 id="userName">Mayk Britto</h1>
                 <div class="gthub">
                     <img src="./images/githubLogo.svg" alt="Logo github">
-                    <a  target="_blank" href="https://github.com/DiegoMMoraes">DiegoMMoraes</a>   
+                    <a  target="_blank" id="githubLink" href="mvb">Mayk Britto</a>   
                 </div>
-                <p>An instructor focused on helping people start programming for web</p> 
+                <p id="githubBio" >An instructor focused on helping people start programming for web</p> 
             </div>
 
             <div class="socials">
@@ -61,29 +61,6 @@
         </div>
     </main>
 
-    <script>
-
-        const socialMediaLinks = {
-            github: "DiegoMMoraes",
-            youtube: "UCPa2EQm0W7eZz16ATZIGO8g",
-            instagram: "_diegommoraes",
-            facebook: "diego.moraees.1",
-            twitter: "_diegommoraes"
-        }
-
-        function changeSocialMediaLinks() {
-            for (let li of socialLinks.children) {
-                const social = li.getAttribute("class")
-
-                if (social == "youtube") 
-                    li.children[0].href = `https://www.youtube.com/channel/${socialMediaLinks.youtube}`
-                else
-                    li.children[0].href = `https://www.${social}.com/${socialMediaLinks[social]}`
-        
-            }
-        }
-
-        changeSocialMediaLinks()
-    </script>
+    <script src="main.js" ></script>
 </body>
 </html>
